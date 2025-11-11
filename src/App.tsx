@@ -336,7 +336,7 @@ function App() {
   };
 
   const currentStepData = steps.length > 0 ? steps[currentStep] : undefined;
-  const showTree = selectedProblem !== 'lcs';
+  const showTree = true;
 
   return (
     <div className="app">
