@@ -336,7 +336,6 @@ function App() {
   };
 
   const currentStepData = steps.length > 0 ? steps[currentStep] : undefined;
-  const isVisualizationRunning = steps.length > 0;
   const showTree = selectedProblem !== 'lcs';
 
   return (
