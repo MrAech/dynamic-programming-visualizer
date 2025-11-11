@@ -78,8 +78,8 @@ function App() {
   const [connector, setConnector] = useState<Connector>(null);
   const [hasVisualized, setHasVisualized] = useState(false);
 
-  const memoItemRefs = useRef<Map<string, RefObject<HTMLDivElement>>>(new Map());
-  const stackFrameRefs = useRef<Map<string, RefObject<HTMLDivElement>>>(new Map());
+  const memoItemRefs = useRef<Map<string, RefObject<HTMLDivElement | null>>>(new Map());
+  const stackFrameRefs = useRef<Map<string, RefObject<HTMLDivElement | null>>>(new Map());
   const memoContainerRef = useRef<HTMLDivElement>(null);
   const stepsCache = useRef<Record<string, Record<string, DPStep[]>>>({});
 
