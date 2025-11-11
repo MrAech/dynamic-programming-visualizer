@@ -3,7 +3,7 @@ import type { DPStep } from '../types';
 
 interface CallStackVisualizerProps {
   stack: DPStep[];
-  stackFrameRefs: React.MutableRefObject<Map<string, RefObject<HTMLDivElement>>>;
+  stackFrameRefs: React.MutableRefObject<Map<string, RefObject<HTMLDivElement | null>>>;
 }
 
 export const CallStackVisualizer: React.FC<CallStackVisualizerProps> = ({ stack, stackFrameRefs }) => {
